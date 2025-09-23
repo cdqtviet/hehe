@@ -8,24 +8,7 @@ body {
   line-height: 1.6;
   background: #f9fff6;
   color: #333;
-}
-
-.skip-link {
-  position: absolute;
-  left: -999px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-.skip-link:focus {
-  position: static;
-  width: auto;
-  height: auto;
-  padding: 10px;
-  background: #fcd34d;
-  color: #000;
-  font-weight: bold;
+  font-size: 16px;
 }
 
 header {
@@ -36,7 +19,7 @@ header {
 }
 header h1 {
   color: #065f46;
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-top: 10px;
 }
 
@@ -44,7 +27,8 @@ nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
   margin-top: 10px;
 }
 nav a {
@@ -63,11 +47,14 @@ nav a:hover {
 header img {
   border-radius: 15px;
   margin-top: 15px;
+  max-width: 90%;
+  height: auto;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 main {
-  max-width: 800px;
+  max-width: 1000px;
+  width: 90%;
   margin: 30px auto;
   padding: 20px;
   background: #fff;
@@ -89,4 +76,20 @@ footer {
   background: #d9f99d;
   color: #065f46;
   border-top: 3px solid #34d399;
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+  header h1 {
+    font-size: 2.8rem;
+  }
+  nav a {
+    padding: 8px 16px;
+    font-size: 1.1rem;
+  }
+  main {
+    padding: 40px;
+  }
 }

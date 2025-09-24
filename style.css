@@ -52,7 +52,7 @@ nav ul {
 }
 
 nav a {
-  color: white;
+  color: red;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -86,3 +86,4 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
